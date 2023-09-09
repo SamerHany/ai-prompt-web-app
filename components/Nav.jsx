@@ -22,7 +22,7 @@ const Nav = () => {
 
     return (
         <nav className="flex-between w-full mb-16 pt-3">
-            <Link href="/" className="flex gap- flex-center">
+            <Link href="/" className="flex gap- flex-center gap-3">
                 <Image
                     src="/assets/images/logo.svg"
                     alt="Promtopia Logo"
@@ -44,7 +44,7 @@ const Nav = () => {
                             Sign Out
                         </button>
 
-                        <Link href="/profile">
+                        <Link href={`/profile/${session?.user.id}`}>
                             <Image 
                                 src={session?.user.image}
                                 width={37}
@@ -88,14 +88,14 @@ const Nav = () => {
                         {toggleDropdown && (
                             <div className="dropdown">
                                 <Link
-                                    href="/profile"
+                                    href={`/profile/${session?.user.id}`}
                                     className="dropdown_link"
                                     onClick={() => setToggleDropdown(false)}
                                 >
                                     My Profile
                                 </Link>
                                 <Link
-                                    href="/profile"
+                                    href="/create-prompt"
                                     className="dropdown_link"
                                     onClick={() => setToggleDropdown(false)}
                                 >
