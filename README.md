@@ -1,7 +1,7 @@
 # Modern AI Prompt Sharing Web App
 
 ## Description
-This is a modern web app for sharing AI prompts. 
+This is a modern web app for sharing AI prompts.  
 It's created using NextJS and Tailwind CSS.  
 And It's fully mobile-responsive.
 
